@@ -72,10 +72,12 @@
     padding: 1.5rem 1rem;
   }
 
+  /* Volta a ficar em linha para reduzir a altura do header */
   .header-content {
-    flex-direction: column; /* força quebra de linha entre texto e botão */
-    align-items: flex-start;
-    gap: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
   }
 
   .header-title {
@@ -84,15 +86,15 @@
 
   .header-subtitle {
     font-size: 0.9rem;
-    width: 100%;
   }
 
   .theme-toggle {
-    width: 36px;
-    height: 36px;
-    font-size: 1.1rem;
-    align-self: flex-end; /* fica abaixo e alinhado à direita */
-    margin-top: 0.25rem;
+    position: absolute; /* fixa no topo à direita */
+    top: 10px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
   }
 }
 
@@ -116,11 +118,12 @@
   }
 
   .theme-toggle {
-    position: static;
-    align-self: flex-end;
-    width: 30px;
-    height: 30px;
-    font-size: 1rem;
-    margin-top: 0.25rem;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.95rem;
+    margin-top: 0;
   }
 }
